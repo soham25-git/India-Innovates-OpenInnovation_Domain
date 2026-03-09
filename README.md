@@ -23,7 +23,7 @@ Instead of blanket-spraying entire fields (which causes massive chemical runoff 
 
 ## 🧠 Neural Architecture
 
-The core vision pipeline implements a **Round Robin Scheduling** architecture, pushing 4 separate `.hef` neural payloads through the Hailo NPU concurrently at ~15-20 FPS:
+The core vision pipeline implements a **Round Robin Scheduling** architecture, pushing 4 separate `.hef` neural payloads through the Hailo NPU concurrently at ~25-30 FPS:
 
 ```mermaid
 graph TD
