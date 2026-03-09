@@ -1,0 +1,8 @@
+# KRISHI-EYE RPi 5 + Hailo-8L Dependencies
+# NOTE: 'hailort' is installed via wheel from Hailo's server (see DEPLOYMENT_GUIDE.md)
+# The Python import is 'hailo_platform', NOT 'hailort'
+
+numpy<2.0.0
+opencv-python
+pyserial
+pyyaml

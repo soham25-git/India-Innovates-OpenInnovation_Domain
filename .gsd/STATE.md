@@ -1,17 +1,23 @@
 # STATE.md
 
 ## Current Position
-- **Status:** Codebase mapping complete.
-- **Context:** Brownfield project with 3 distinct computer vision tasks targeting Hailo-8L NPU.
+- **Phase**: 5 (ONNX to HEF Conversion)
+- **Task**: Planning complete
+- **Status**: Ready for execution
 
 ## Last Session Summary
-Mapping complete:
-- 3 components identified: Infection Classification, Leaf Segmentation, Lesion Segmentation.
-- Core dependencies analyzed (PyTorch, Ultralytics, SMP, Timm).
-- Technical debt identified (QAT removal, backbone migration, static shape enforcement).
-- `.gsd/ARCHITECTURE.md` and `.gsd/STACK.md` created.
+Codebase mapping complete.
+- 4 core components identified (Leaf Seg, Classification, Lesion Seg, Depth)
+- 4 production dependencies analyzed (cv2, numpy, yaml, hailort)
+- 3 technical debt items found (HailoRT placeholder, Denoising latency, Temporal smoothing)
+- Phase 5 Research complete: ONNX to HEF conversion strategy defined.
+All Phases (1-4) Complete:
+- **Optimization:** Migrated Classification to MobileNet-V2, YOLOv8n-seg to 640x640, and UNet to 256x256.
+- **Robustness:** Integrated Albumentations (Rain, Blur, Fog) and Hailo Model Zoo (Depth, Denoising).
+- **Orchestration:** Built `orchestrator.py` with mock mode and ROI logic.
+- **Deployment:** Created `DEPLOYMENT_GUIDE.md` for ONNX to HEF conversion.
 
-## Next Steps
-1. Return to `/new-project` to finalize specification and roadmap.
-2. Create `SPEC.md` based on `GOAL.md` and `SUMMARY.md`.
-3. Plan Phase 1 (likely Infection Classification backbone migration).
+## Next Steps (User)
+1. **Download:** Pull ONNX files from Kaggle once training is finished.
+2. **Convert:** Follow `DEPLOYMENT_GUIDE.md` to compile HEFs.
+3. **Execute:** Run `python orchestrator.py` on the Pi 5.
