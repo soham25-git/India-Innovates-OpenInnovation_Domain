@@ -103,6 +103,8 @@ sequenceDiagram
 *   **`02_deployment/`**: The `main_edge_inference_pipeline.py` acts as the primary live inference pipeline managing UART outputs.
 *   **`03_training/`**: Calibration scripts generating `uint8` dataset profiles necessary for INT8 conversion.
 *   **`04_models/`**: Source FP32 `onnx/` files alongside the production-ready quantized `hef/` files.
+*   **`05_configs/`**: Environment requirements and model capability definitions.
+*   **`06_scripts/`**: Automation tools for model compilation and SNR/Export verification.
 *   **`07_hardware_calibration/`**: The Teensy 4.1 C++ firmware (`krishi_eye_teensy.ino`) and DFC profile performance reports.
 *   **`08_docs/`**: Evaluator-focused documentation detailing the deep technical constraints, architecture, and technology stacks.
 

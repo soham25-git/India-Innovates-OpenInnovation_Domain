@@ -4,9 +4,6 @@ The Evaluation Package is strictly organized to showcase the technical pipeline 
 
 ## Directory Breakdown
 
-### `01_overview/`
-Placeholder for any immediate executive summaries, though primary overviews are located within `08_docs/README.md`.
-
 ### `02_deployment/`
 The executable orchestration logic that runs live inference on the field.
 - **`main_edge_inference_pipeline.py`**: The definitive live inference script combining Leaf Segmentation, Disease Classification, Lesion UNet masking, and Depth integration into a unified pipeline controlling UART outputs.
