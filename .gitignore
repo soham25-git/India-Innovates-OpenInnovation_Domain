@@ -1,31 +1,25 @@
-# Agent and IDE Files
-.gsd/
-.agent/
-.gemini/
-.planning/
-.vscode/
-
-# Virtual Environment & Python Caches
-venv/
-__pycache__/
-*.pyc
-.pytest_cache/
-
-# Test data & logs
-test Project/
-test\ Project/
+# Exclude large binaries that are intermediate states
+*.har
 *.log
+*.tmp
+snapshot.txt
+rename_package.py
+final_polish.py
+README_harden.py
+update_manifest.py
+*.npy
 
-# Models (Optional - typically too big for standard Git, but retained locally)
-# If models are < 100MB, they can be uploaded to GitHub.
-# *.hef
-# *.har
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
 
 # OS generated files
 .DS_Store
 Thumbs.db
-
-# Huge Training Datasets
-Infection Classification/
-Leaf Segmentation/
-Lesion Segmentation/
